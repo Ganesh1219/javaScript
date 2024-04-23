@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change background</title>
+    <link rel="stylesheet" href="background.css">
+</head>
+<body>
+    <div class="container">
+        <label>Enter color:</label><br>
+        <input type="text" id="t1"><br>
+        <button class="submit" onclick="show()">Click</button>
+    </div>
+    <script>
+        function show(){
+            let clr;
+            clr=document.getElementById('t1').value;
+            document.body.style.backgroundColor=clr;
+        }
+    </script>
+</body>
+</html>

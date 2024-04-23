@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <header>
+        <p id="p1">we are learning python fullstack</p>
+    </header><br>
+    <div class="container">
+        <label>Enter color:</label><br>
+        <input type="text" id="t1"><br>
+        <button class="submit" onclick="display()">Click</button>
+    </div>
+    <script>
+        function display(){
+            let clr,txt;
+            clr=document.getElementById('t1').value;
+            txt=document.getElementById('p1');
+            txt.style.color=clr;
+        }
+    </script>
+</body>
+</html>
